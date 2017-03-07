@@ -36,17 +36,38 @@
       </section>
     <section class="container">
       <h3>Class List</h3>
-
-      <li class="list-group-item" ng-repeat="person in phirePhiter.people">
-        {{person.firstName}}{{" " + person.lastName}}{{" says " + person.shoutout}}
-      </li>
-
-      <li class="list-group-item" ng-repeat="person in phirePhiter.people">
-        <a ng-href="https://github.com/{{person.git_username}}">{{person.firstName}}</a>{{" " + person.lastName}}{{" says " + person.shoutout}}
-      </li>
-
+      <!-- <ul class="list-group"> -->
+        <!-- <li class="list-group-item" ng-repeat="person in phirePhiter.people"> <!-- What needs to be repeated? -->
+          <!-- TODO: Create a list item for everyone in the class -->
+          {{person.firstName}}<!-- include the other parameters for the person -->
+        <!-- </li> -->
+        <!-- <li class="list-group-item" ng-repeat="person in phirePhiter.people"> <!-- What needs to be repeated? -->
+          <!-- {{person.lastName}} -->
+        <!-- </li> -->
+        <!-- <li class="list-group-item" ng-repeat="person in phirePhiter.people"> <!-- What needs to be repeated? -->
+          <!-- {{person.git_username}} -->
+        <!-- </li> -->
+        <!-- <li class="list-group-item" ng-repeat="person in phirePhiter.people"> <!-- What needs to be repeated? -->
+          <!-- {{person.shoutout}} -->
+        <!-- </li>
+      </ul> -->
+      <table>
+        <tbody>
+          <tr>
+            <ul class="list-group">
+              <td><li class="list-group-item" ng-repeat="person in phirePhiter.people">
+                <!-- TODO: Create a list item for everyone in the class -->
+                {{person.firstName}}{{" " + person.lastName}}{{" says " + person.shoutout}}
+              </li></td>
+            </ul>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </main>
-
+  <!-- {{person.firstName}}<!-- include the other parameters for the person -->
+  <!-- {{person.lastName}}
+  {{person.git_username}}
+  {{person.shoutout}} -->
 </body>
 </html>
